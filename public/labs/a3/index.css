@@ -83,6 +83,13 @@ p#id-selector-2 {
     margin-right: 50px;
 }
 
+.rotate-paragraph {
+    width: 250px;
+    height: 250px;
+    transform: rotate(90deg);
+}
+
+
 .margin-all-around {
     margin: 30px;
 }
