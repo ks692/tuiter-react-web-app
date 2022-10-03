@@ -16,6 +16,15 @@
     width: 100%;
 }
 
+.wd-container3{
+    display: block;
+}
+
+.wd-line{
+    border-color: gray;
+    background-color: gray;
+}
+
 .wd-container2{
     float: left;
     display: block;
