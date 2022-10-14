@@ -16,8 +16,8 @@
 }
 
 .wd-main-border{
-     border: solid rgb(47, 51, 54);
- }
+    border: solid rgb(47, 51, 54);
+}
 
 .wd-links-div{
     display: inline-block;
@@ -249,4 +249,9 @@ https://nikitahl.com/search-icon-inside-input
 
 .wd-text-responsive{
     font-size:0.95vw;
+}
+
+.wd-no-dex{
+    text-decoration: none;
+    color: inherit;
 }

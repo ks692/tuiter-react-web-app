@@ -1,0 +1,21 @@
+.wd-text-responsive{
+    font-size:0.95vw;
+}
+
+@media screen and (max-width: 299px) {
+    .wd-my-icon {
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 799px) {
+    .wd-my-icon {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .wd-my-icon {
+        font-size: 0.8em;
+    }
+}
