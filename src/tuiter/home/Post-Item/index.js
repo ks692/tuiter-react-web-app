@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faRetweet, faHeart, faUpload, faCircleCheck,faEllipsisH,faCheckCircle } from '@fortawesome/free-solid-svg-icons'
+import { faRetweet, faHeart, faUpload, faCircleCheck,faEllipsisH } from '@fortawesome/free-solid-svg-icons'
 import "./index.css";
 
 
