@@ -1,0 +1,29 @@
+[
+  {
+    "userImage": "/images/anime1.jpg",
+    "userName": "Elon Musk",
+    "userHandle": "elonmusk",
+    "time": "2h",
+    "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
+    "image": "/images/SpaceX.jpeg",
+    "contentTitle":"Lorem Ipsum has been the industry's standard dummy text",
+    "contentSummary": "",
+    "link": "netflix.com",
+    "comments": "22",
+    "retweets": "9",
+    "likes": "1.1k"
+  },
+  {
+    "userImage": "/images/anime2.jpg",
+    "userName": "New York Post",
+    "userHandle": "nypost",
+    "time": "23h",
+    "title": "Grimes seen reading Karl Marx following split with world's richest man",
+    "image": "",
+    "contentTitle":"Lorem Ipsum has been the industry's standard dummy text",
+    "contentSummary":"only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "link": "nypost.com",
+    "comments": "23k",
+    "retweets": "9",
+    "likes": "1.1k"
+  }]
