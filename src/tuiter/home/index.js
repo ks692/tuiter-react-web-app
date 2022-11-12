@@ -1,7 +1,9 @@
 import postsArray from './Post-Item/posts.json'
 import PostItem from "./Post-Item/index.js";
 
-const HomeComponent = () => {
+
+const HomeComponent2 = () => {
+
     return (
         <div className="card">
             {
@@ -11,4 +13,4 @@ const HomeComponent = () => {
     )
 }
 
-export default HomeComponent;
+export default HomeComponent2;
