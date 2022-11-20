@@ -5,6 +5,7 @@ import {createTuitThunk}
     from "../../services/tuits-thunks";
 
 const WhatsHappening = () => {
+
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
     const tuitClickHandler = () => {
