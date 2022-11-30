@@ -29,62 +29,61 @@ const templateTuit = {
 
 const tuitsSlice = createSlice({
     name: 'tuits',
-    initialState,
-    extraReducers: {
-        [findTuitsThunk.pending]:
-            (state) => {
-                state.loading = true
-                state.tuits = []
-            },
-        [findTuitsThunk.fulfilled]:
-            (state, { payload }) => {
-                state.loading = false
-                state.tuits = payload
-            },
-        [findTuitsThunk.rejected]:
-            (state) => {
-                state.loading = false
-            },
-        [createTuitThunk.fulfilled]:
-            (state, { payload }) => {
-                state.loading = false
-                state.tuits.push(payload)
-            },
+    initialState: initialState,
+    extraReducers:{
+        [findTuitsThunk.pending]: (state) => {
+            state.loading = true
+            state.tuits = []
+        },
+        [findTuitsThunk.fulfilled]: (state, { payload }) => {
+            state.loading = false
+            state.tuits = payload
+        },
+        [findTuitsThunk.rejected]: (state ) => {
+            state.loading = false
+        },
         [deleteTuitThunk.fulfilled] :
             (state, { payload }) => {
                 state.loading = false
                 state.tuits = state.tuits
-                    .filter(t => t._id != payload)
+                    .filter(t => t._id !== payload)
+            },
+        [createTuitThunk.fulfilled]:
+            (state, { payload }) => {
+                payload = {...payload, ...templateTuit}
+                state.loading = false
+                state.tuits.push(payload)
             },
         [updateTuitThunk.fulfilled]:
             (state, { payload }) => {
+            console.log(state)
+            console.log(payload)
                 state.loading = false
-                console.log(state.tuits)
                 const tuitNdx = state.tuits
-                    .findIndex((t) => t._id == payload._id)
+                    .findIndex((t) => t._id === payload._id)
                 state.tuits[tuitNdx] = {
                     ...state.tuits[tuitNdx],
                     ...payload
                 }
-            }
-
+            },
     },
     reducers: {
+        deleteTuit(state, action) {
+            const index = state
+                .findIndex(tuit =>
+                    tuit._id === action.payload._id);
+            state.splice(index, 1);
+        },
         createTuit(state, action) {
             state.unshift({
                 ...action.payload,
                 ...templateTuit,
                 _id: (new Date()).getTime(),
             })
-        },
-        deleteTuit(state, action) {
-            const index = state
-                .findIndex(tuit =>
-                    tuit._id === action.payload);
-            state.splice(index, 1);
         }
     }
+
 });
 
-export const {createTuit,deleteTuit} = tuitsSlice.actions;
+export const {createTuit, deleteTuit} = tuitsSlice.actions;
 export default tuitsSlice.reducer;
