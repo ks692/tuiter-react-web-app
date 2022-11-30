@@ -54,13 +54,13 @@ const tuitsSlice = createSlice({
             (state, { payload }) => {
                 state.loading = false
                 state.tuits = state.tuits
-                    .filter(t => t._id !== payload)
+                    .filter(t => t._id != payload)
             },
         [updateTuitThunk.fulfilled]:
             (state, { payload }) => {
                 state.loading = false
                 const tuitNdx = state.tuits
-                    .findIndex((t) => t._id === payload._id)
+                    .findIndex((t) => t._id == payload._id)
                 state.tuits[tuitNdx] = {
                     ...state.tuits[tuitNdx],
                     ...payload
