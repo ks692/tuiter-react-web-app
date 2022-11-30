@@ -59,6 +59,7 @@ const tuitsSlice = createSlice({
         [updateTuitThunk.fulfilled]:
             (state, { payload }) => {
                 state.loading = false
+                console.log(state.tuits)
                 const tuitNdx = state.tuits
                     .findIndex((t) => t._id == payload._id)
                 state.tuits[tuitNdx] = {
