@@ -13,7 +13,6 @@ import {Provider} from "react-redux";
 import HomeComponent from "./HomeNew";
 import ProfileComponent from "./profile";
 import ProfileReducer from "./profile/profile-reducer";
-import EditProfile from "./edit-profile";
 import EditProfileComponent from "./edit-profile";
 
 const store = configureStore(
