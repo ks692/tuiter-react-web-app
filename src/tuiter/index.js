@@ -10,7 +10,7 @@ import whoReducer
 import { configureStore }
     from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
-import HomeComponent from "./HomeNew";
+import HomeNewComponent from "./HomeNew";
 import ProfileComponent from "./profile";
 import ProfileReducer from "./profile/profile-reducer";
 import EditProfileComponent from "./edit-profile";
@@ -28,7 +28,7 @@ function Tuiter() {
                 <div className="col-10 col-md-10 col-lg-7 col-xl-6"
                      style={{"position": "relative"}}>
                     <Routes>
-                        <Route index path="home" element={<HomeComponent/>}/>
+                        <Route index path="home" element={<HomeNewComponent/>}/>
                         <Route path="explore" element={<ExploreComponent/>}/>
                         <Route path="profile" element={<ProfileComponent/>}/>
                         <Route path="edit-profile" element={<EditProfileComponent/>}/>

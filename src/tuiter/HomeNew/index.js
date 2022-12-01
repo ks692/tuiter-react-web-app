@@ -1,7 +1,7 @@
 import WhatsHappening from "./whats-happening";
 import TuitList from "../tuits/tuit-list";
 
-const HomeComponent = () => {
+const HomeNewComponent = () => {
     return (
         <>
             <h4>Home</h4>
@@ -12,4 +12,4 @@ const HomeComponent = () => {
     )
 }
 
-export default HomeComponent;
+export default HomeNewComponent;
