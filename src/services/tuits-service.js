@@ -1,5 +1,5 @@
 import axios from 'axios';
-const TUITS_API = 'https://node-server-app-sriki.herokuapp.com/api/tuits';
+const TUITS_API = 'https://node-backend-blb1.onrender.com/api/tuits';
 
 export const createTuit = async (tuit) => {
     const response = await axios.post(TUITS_API, tuit)
